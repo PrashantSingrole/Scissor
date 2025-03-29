@@ -12,7 +12,7 @@ const AddFacility = () => {
     e.preventDefault();
     let data = { name, description };
 
-    fetch("http://localhost:8080/api/salon/facility/add", {
+    fetch("http://https://scissor-servers.onrender.com/api/salon/facility/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
