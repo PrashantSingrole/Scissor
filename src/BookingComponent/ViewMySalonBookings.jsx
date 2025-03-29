@@ -24,7 +24,7 @@ const ViewMySalonBookings = () => {
 
   const retrieveAllBookingStatus = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch/status"
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch/status"
     );
     return response.data;
   };
@@ -50,7 +50,7 @@ const ViewMySalonBookings = () => {
 
   const retrieveAllBooking = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch/bookings?salonId=" +
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch/bookings?salonId=" +
         user.salonId
     );
     console.log(response.data);
@@ -58,7 +58,7 @@ const ViewMySalonBookings = () => {
   };
 
   const updateSalonBookingStatus = (e) => {
-    fetch("http://localhost:8080/api/book/salon/update/status", {
+    fetch("http://https://scissor-servers.onrender.com/api/book/salon/update/status", {
       method: "POST",
       headers: {
         Accept: "application/json",
