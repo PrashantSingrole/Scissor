@@ -12,7 +12,7 @@ const GetSalonFacilities = (salon) => {
 
   const retrieveAllFacilities = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/facility/salon?salonId=" + salonId
+      "http://https://scissor-servers.onrender.com/api/salon/facility/salon?salonId=" + salonId
     );
     return response.data;
   };
