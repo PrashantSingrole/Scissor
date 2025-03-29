@@ -31,21 +31,21 @@ const SalonCarousel = (salon) => {
       <div className="carousel-inner">
         <div className="carousel-item active">
           <img
-            src={"http://localhost:8080/api/salon/" + salon.item.image1}
+            src={"http://https://scissor-servers.onrender.com/api/salon/" + salon.item.image1}
             className="d-block w-100"
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src={"http://localhost:8080/api/salon/" + salon.item.image2}
+            src={"http://https://scissor-servers.onrender.com/api/salon/" + salon.item.image2}
             className="d-block w-100"
             alt="..."
           />
         </div>
         <div className="carousel-item">
           <img
-            src={"http://localhost:8080/api/salon/" + salon.item.image3}
+            src={"http://https://scissor-servers.onrender.com/api/salon/" + salon.item.image3}
             className="d-block w-100"
             alt="..."
           />
