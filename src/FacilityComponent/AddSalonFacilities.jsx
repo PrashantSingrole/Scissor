@@ -15,7 +15,7 @@ const AddSalonFacilities = () => {
 
   const retrieveSalonFacilities = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/facility/salon?salonId=" + salonId
+      "http://https://scissor-servers.onrender.com/api/salon/facility/salon?salonId=" + salonId
     );
     return response.data;
   };
@@ -33,7 +33,7 @@ const AddSalonFacilities = () => {
 
   const retrieveAllFacilities = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/facility/fetch"
+      "http://https://scissor-servers.onrender.com/api/salon/facility/fetch"
     );
     return response.data;
   };
@@ -55,7 +55,7 @@ const AddSalonFacilities = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/salon/facility/salon/add",
+        "http://https://scissor-servers.onrender.com/api/salon/facility/salon/add",
         data
       );
 
