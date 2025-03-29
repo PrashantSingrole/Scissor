@@ -18,7 +18,7 @@ const VerifyBooking = () => {
 
   const retrieveAllBookingStatus = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch/status"
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch/status"
     );
     return response.data;
   };
@@ -44,7 +44,7 @@ const VerifyBooking = () => {
 
   const retrieveBooking = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch/id?bookingId=" + bookingId
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch/id?bookingId=" + bookingId
     );
     console.log(response.data);
     return response.data;
@@ -64,7 +64,7 @@ const VerifyBooking = () => {
 
     console.log(updateBookingStatus);
 
-    fetch("http://localhost:8080/api/book/salon/update/status", {
+    fetch("http://https://scissor-servers.onrender.com/api/book/salon/update/status", {
       method: "POST",
       headers: {
         Accept: "application/json",
