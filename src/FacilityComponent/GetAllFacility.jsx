@@ -7,7 +7,7 @@ const GetAllFacility = () => {
 
   const retrieveAllFacilities = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/facility/fetch"
+      "http://https://scissor-servers.onrender.com/api/salon/facility/fetch"
     );
     return response.data;
   };
