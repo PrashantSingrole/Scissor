@@ -39,7 +39,7 @@ const AddSalonReview = () => {
 
   const retrieveSalon = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/id?salonId=" + salonId
+      "http://https://scissor-servers.onrender.com/api/salon/id?salonId=" + salonId
     );
 
     return response.data;
@@ -67,7 +67,7 @@ const AddSalonReview = () => {
     console.log("Lets print location id here " + salon.location.id);
 
     const response = await axios.get(
-      "http://localhost:8080/api/salon/location?locationId=" + locationId
+      "http://https://scissor-servers.onrender.com/api/salon/location?locationId=" + locationId
     );
     console.log(response.data);
     return response.data;
@@ -82,7 +82,7 @@ const AddSalonReview = () => {
       setUserId(user.id);
       let data = { userId, salonId, star, review };
 
-      fetch("http://localhost:8080/api/salon/review/add", {
+      fetch("http://https://scissor-servers.onrender.com/api/salon/review/add", {
         method: "POST",
         headers: {
           Accept: "application/json",
