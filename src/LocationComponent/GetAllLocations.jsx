@@ -7,7 +7,7 @@ const GetAllLocations = () => {
 
   const retrieveAllLocations = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/location/fetch"
+      "http://https://scissor-servers.onrender.com/api/salon/location/fetch"
     );
     return response.data;
   };
