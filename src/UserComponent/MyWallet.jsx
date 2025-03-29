@@ -25,7 +25,7 @@ const MyWallet = () => {
 
   const retrieveMyWallet = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/user/id?userId=" + salon.id
+      "http://https://scissor-servers.onrender.com/api/user/id?userId=" + salon.id
     );
 
     return response.data;
