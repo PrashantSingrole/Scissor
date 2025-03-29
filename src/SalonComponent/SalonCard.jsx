@@ -7,7 +7,7 @@ const SalonCard = (salon) => {
     <div className="col">
       <div class="card border-color rounded-card card-hover product-card custom-bg h-100">
         <img
-          src={"http://localhost:8080/api/salon/" + salon.item.image2}
+          src={"http://https://scissor-servers.onrender.com/api/salon/" + salon.item.image2}
           class="card-img-top rounded mx-auto d-block m-2"
           alt="img"
           style={{
