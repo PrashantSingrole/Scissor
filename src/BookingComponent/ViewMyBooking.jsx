@@ -20,7 +20,7 @@ const ViewMyBooking = () => {
 
   const retrieveAllBooking = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch?userId=" + user.id
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch?userId=" + user.id
     );
     console.log(response.data);
     return response.data;
