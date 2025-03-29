@@ -15,7 +15,7 @@ const GetSalonReviews = (salon) => {
 
   const retrieveAllReviews = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/review/fetch?salonId=" + salonId
+      "http://https://scissor-servers.onrender.com/api/salon/review/fetch?salonId=" + salonId
     );
     return response.data;
   };
