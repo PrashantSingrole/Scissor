@@ -51,7 +51,7 @@ const Salon = () => {
 
   const retrieveSalon = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/id?salonId=" + salonId
+      "http://https://scissor-servers.onrender.com/api/salon/id?salonId=" + salonId
     );
 
     return response.data;
@@ -93,7 +93,7 @@ const Salon = () => {
 
   const retrieveSalonsByLocation = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/location?locationId=" + locationId
+      "http://https://scissor-servers.onrender.com/api/salon/location?locationId=" + locationId
     );
     console.log(response.data);
     return response.data;
@@ -109,7 +109,7 @@ const Salon = () => {
 
     booking.userId = user.id;
 
-    fetch("http://localhost:8080/api/book/salon/validate", {
+    fetch("http://https://scissor-servers.onrender.com/api/book/salon/validate", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -130,7 +130,7 @@ const Salon = () => {
               progress: undefined,
             });
 
-            fetch("http://localhost:8080/api/payment/order/create", {
+            fetch("http://https://scissor-servers.onrender.com/api/payment/order/create", {
               method: "PUT",
               headers: {
                 Accept: "application/json",
@@ -155,7 +155,7 @@ const Salon = () => {
                       response.razorpay_order_id = options.orderId;
                       response.booking = res.booking; // making proper request
                       fetch(
-                        "http://localhost:8080/api/payment/razorpPay/response",
+                        "http://https://scissor-servers.onrender.com/api/payment/razorpPay/response",
                         {
                           method: "PUT",
                           headers: {
@@ -249,7 +249,7 @@ const Salon = () => {
                         console.log(JSON.stringify(response));
 
                         fetch(
-                          "http://localhost:8080/api/payment/razorpPay/response",
+                          "http://https://scissor-servers.onrender.com/api/payment/razorpPay/response",
                           {
                             method: "PUT",
                             headers: {
