@@ -11,7 +11,7 @@ const AddSalonForm = () => {
 
   const retrieveAllLocations = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/salon/location/fetch"
+      "http://https://scissor-servers.onrender.com/api/salon/location/fetch"
     );
     return response.data;
   };
@@ -28,7 +28,7 @@ const AddSalonForm = () => {
   }, []);
 
   const retrieveAllSalonUsers = async () => {
-    const response = await axios.get("http://localhost:8080/api/user/salon");
+    const response = await axios.get("http://https://scissor-servers.onrender.com/api/user/salon");
     return response.data;
   };
 
@@ -78,7 +78,7 @@ const AddSalonForm = () => {
     formData.append("userId", salon.userId);
 
     axios
-      .post("http://localhost:8080/api/salon/add", formData)
+      .post("http://https://scissor-servers.onrender.com/api/salon/add", formData)
       .then((response) => {
         let res = response.data;
         if (res.responseCode === 0) {
