@@ -18,7 +18,7 @@ const ViewAllBooking = () => {
 
   const retrieveAllBooking = async () => {
     const response = await axios.get(
-      "http://localhost:8080/api/book/salon/fetch/all"
+      "http://https://scissor-servers.onrender.com/api/book/salon/fetch/all"
     );
     console.log(response.data);
     return response.data;
@@ -66,7 +66,7 @@ const ViewAllBooking = () => {
                       <td>
                         <img
                           src={
-                            "http://localhost:8080/api/salon/" +
+                            "http://https://scissor-servers.onrender.com/api/salon/" +
                             booking.salonImage
                           }
                           class="img-fluid"
