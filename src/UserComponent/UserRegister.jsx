@@ -35,7 +35,7 @@ const UserRegister = () => {
   const [genders, setGenders] = useState([]);
 
   const retrieveAllGenders = async () => {
-    const response = await axios.get("http://localhost:8080/api/user/gender");
+    const response = await axios.get("http://https://scissor-servers.onrender.com/api/user/gender");
     return response.data;
   };
 
@@ -52,7 +52,7 @@ const UserRegister = () => {
 
   const saveUser = (event) => {
     event.preventDefault();
-    fetch("http://localhost:8080/api/user/register", {
+    fetch("http://https://scissor-servers.onrender.com/api/user/register", {
       method: "POST",
       headers: {
         Accept: "application/json",
